@@ -59,7 +59,7 @@ def handle_message(conversation_chain, message):
 
 def main():
     load_dotenv()
-    pdf_docs = ['D:\Graduation project\lecture_1.pdf']
+    pdf_docs = ['lecture_1.pdf']
     #get pdf text
     row_text = get_pdf_text(pdf_docs)
     # print(f"{row_text}\nLength: {len(row_text)}")
