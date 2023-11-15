@@ -78,8 +78,9 @@ def main():
     message = input("Enter your message: ")
     while(message != 'exit'):
         response = handle_message(conversation_chain, message)
+        # print(response)
+        print(response.get('answer'))
         message = input("Enter your message: ")
-        print(response)
 
 if __name__ == '__main__':
     main()
